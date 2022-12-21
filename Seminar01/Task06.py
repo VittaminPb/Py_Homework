@@ -9,7 +9,7 @@
 
 a = int(input("Введите номер дня недели: "))
 
-if (a==6 or a==7):
-    print("да")
+if (a == 6 or a == 7):
+    print(f"{a} -> да")
 else:
-    print("нет")
+    print(f"{a} -> нет")
