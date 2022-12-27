@@ -5,3 +5,9 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
+n = input("Введите число: ")
+sum = 0
+for i in str(n):
+    if i != '.':
+         sum += int(i)
+print(f"{n} -> {sum}")
