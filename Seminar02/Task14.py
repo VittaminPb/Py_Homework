@@ -9,5 +9,5 @@ n = input("Введите число: ")
 sum = 0
 for i in str(n):
     if i != '.':
-         sum += int(i)
+        sum += int(i)
 print(f"{n} -> {sum}")
