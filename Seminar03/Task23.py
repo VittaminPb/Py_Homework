@@ -9,6 +9,6 @@
 n = list(map(int, (input("Введите числа через пробел: ").split())))
 
 size = len(n)//2 + 1 if len(n) % 2 != 0 else len(n)//2
-odds = [n[i] * n[len(n) - i - 1] for i in range(size)]
+mult = [n[i] * n[len(n) - i - 1] for i in range(size)]
 
-print(f"{n} => {odds}")
+print(f"{n} => {mult}")
