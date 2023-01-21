@@ -13,10 +13,6 @@
 # (5 - количество единиц, далее сама единица, 4 - количество двоек, далее сама двойка и т.д)
 # Модуль восстановления работет в обратную сторону - из строки выходных данных, получить строку входных данных.
 
-import re
-
-input_str = input("Введите строку элементов для сжатия: ")
-
 def compress(i_s):
     str_code = ""
     prev_sym = ""
@@ -33,6 +29,24 @@ def compress(i_s):
         str_code += str(count) + prev_sym
     return str_code
 
-str_code = compress(input_str)
-print(f"Входные данные: {input_str }, выходные данные: {str_code}")
 
+def decode(text):
+    dec = ""
+    count = ""
+    digit = True
+    for sym in text:
+        if digit:
+            count = int(sym)
+            digit = False
+        else:
+            dec += int(count)*sym
+            digit = True
+    return dec
+
+input_str = input("Введите строку элементов для сжатия: ")
+
+encode = compress(input_str)
+print(f"Исходные данные: {input_str }, сжатые данные: {encode}")
+
+dec_str = decode(encode)
+print(f"Декодированныe данные: {dec_str}")
