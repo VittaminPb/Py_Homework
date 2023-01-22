@@ -5,3 +5,9 @@
 # 15
 # Вывод: [1, 9, 13, 14, 19]
 
+a = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+min = 5
+max = 15
+
+indxs = [i for i, x in enumerate(a) if min <= x <= max]
+print(indxs)
