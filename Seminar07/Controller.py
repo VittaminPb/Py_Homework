@@ -8,15 +8,7 @@ def start():
     if choice == 1:
         Modul.check()
     elif choice == 2:
-        Modul.sort()
+        Modul.read_choice()
     else:
         print("Некорректный запрос")
-    # else:
-    #     sorting()
 
-
-# def check():
-#     valid = exists("Phonebook.csv")
-#     if not valid:
-#         Modul.creating()
-# # Modul.writing()

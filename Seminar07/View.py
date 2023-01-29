@@ -1,8 +1,7 @@
 def get_choice():
-    cho = int(input("выберите действие: 1 - создание записи, 2 - вывод справочника: "))
+    cho = int(input("выберите действие: 1 - создание записи, 2 - вывод справочника >> "))
     return cho
    
-
 def get_info():
     ph_book = []
     ID = int(input("Введите ID: "))
@@ -16,3 +15,7 @@ def get_info():
     comment = input("Введите комментарий: ")
     ph_book.append(comment)
     return ph_book
+
+def get_read_choice():
+    r_cho = int(input("Выберите действия со справочником: 1 - вывод в консоль, 2 - сортировка по ID, 3 - вывод имён и фамилий >> "))
+    return r_cho
