@@ -4,8 +4,8 @@ def get_choice():
    
 def get_info():
     ph_book = []
-    ID = int(input("Введите ID: "))
-    ph_book.append(ID)
+    id = int(input("Введите ID: "))
+    ph_book.append(id)
     last_name = input("Введите фамилию: ")
     ph_book.append(last_name)
     first_name = input("Введите имя: ")
