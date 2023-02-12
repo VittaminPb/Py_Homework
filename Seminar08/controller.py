@@ -1,4 +1,6 @@
 import view
+from statistics import mean
+
 
 main_dct = {}
 student_name = []
@@ -28,7 +30,16 @@ def start():
             print(main_dct)
         elif op == 5:
             name = view.get_name_to_show()
-            print(f"Оценки {name} : main_dct[name]")
+            print(f"Оценки {name} : {main_dct[name]}")
         elif op == 6:
+            name = view.get_name_to_show()
+            count = 0
+            sum = 0
+            for mark in main_dct:
+                count += 1
+                sum += main_dct[mark]
+            mark_avg = sum/count
+            print(f"Средняя оценка {name} : {mark_avg}")
+        elif op == 7:
             break
         print(main_dct)
