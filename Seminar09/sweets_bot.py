@@ -29,8 +29,8 @@ def controller(message):
     if sweets>0:
         if flag == "user":
             mrk = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-            key1 = telebot.types.KeyboardButton("21")
-            key2 = telebot.types.KeyboardButton("15")
+            key1 = telebot.types.KeyboardButton("1")
+            key2 = telebot.types.KeyboardButton("28")
             mrk.add(key1)
             mrk.add(key2)
             bot.send_message(message.chat.id, f"Ваш ход введите кол-во конфет от 0 до {max_sweet}",reply_markup=mrk)
